@@ -116,7 +116,7 @@
         ],
       },
       'conditions': [
-        ['target_arch=="arm"', {
+        ['target_arch=="arm64"', {
           'sources': [ 'src/arm/ffi.c' ],
           'conditions': [
             ['OS=="linux"', {
