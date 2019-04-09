@@ -13,13 +13,16 @@
 /* #undef C_ALLOCA */
 
 /* Define to the flags needed for the .section .eh_frame directive. */
-#define EH_FRAME_FLAGS "aw"
+#define EH_FRAME_FLAGS "a"
 
 /* Define this if you want extra debugging. */
 /* #undef FFI_DEBUG */
 
 /* Cannot use PROT_EXEC on this target, so, we revert to alternative means */
 /* #undef FFI_EXEC_TRAMPOLINE_TABLE */
+
+/* Define this if you want to enable pax emulated trampolines */
+/* #undef FFI_MMAP_EXEC_EMUTRAMP_PAX */
 
 /* Cannot use malloc on this target, so, we revert to alternative means */
 /* #undef FFI_MMAP_EXEC_WRIT */
@@ -90,7 +93,7 @@
 #define HAVE_MMAP_FILE 1
 
 /* Define if .eh_frame sections should be read-only. */
-/* #undef HAVE_RO_EH_FRAME */
+#define HAVE_RO_EH_FRAME 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
@@ -133,7 +136,7 @@
 #define PACKAGE_NAME "libffi"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "libffi 3.0.11"
+#define PACKAGE_STRING "libffi 3.0.12"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "libffi"
@@ -142,7 +145,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "3.0.11"
+#define PACKAGE_VERSION "3.0.12"
 
 /* The size of `double', as computed by sizeof. */
 #define SIZEOF_DOUBLE 8
@@ -169,7 +172,7 @@
 /* #undef USING_PURIFY */
 
 /* Version number of package */
-#define VERSION "3.0.11"
+#define VERSION "3.0.12"
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */

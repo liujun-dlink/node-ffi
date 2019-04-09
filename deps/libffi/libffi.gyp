@@ -117,10 +117,10 @@
       },
       'conditions': [
         ['target_arch=="arm64"', {
-          'sources': [ 'src/arm/ffi.c' ],
+          'sources': [ 'src/aarch64/ffi.c' ],
           'conditions': [
             ['OS=="linux"', {
-              'sources': [ 'src/arm/sysv.S' ]
+              'sources': [ 'src/aarch64/sysv.S' ]
             }]
           ]
         }, { # ia32 or x64
