@@ -54,10 +54,10 @@
 /* #undef HAVE_AS_SPARC_UA_PCREL */
 
 /* Define if your assembler supports unwind section type. */
-#define HAVE_AS_X86_64_UNWIND_SECTION_TYPE 1
+/* #undef HAVE_AS_X86_64_UNWIND_SECTION_TYPE */
 
 /* Define if your assembler supports PC relative relocs. */
-#define HAVE_AS_X86_PCREL 1
+/* #undef HAVE_AS_X86_PCREL */
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
